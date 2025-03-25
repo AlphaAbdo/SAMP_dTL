@@ -1,0 +1,37 @@
+{
+	"user": "AlphaAbdo",
+	"repo": "dev_template",
+	"tag": "0.0.1",
+	"entry": "gamemodes/DecoyLib.pwn",
+	"output": "gamemodes/Output.amx",
+	"dependencies": [
+		"pawn-lang/samp-stdlib"
+	],
+	"local": true,
+	"runtime": {
+		"plugins": [
+			"sampptl_example"
+		],
+		"lanmode" : true,
+		"announce" : true,
+		"query" : true
+	},
+	"runtimes": [
+		{
+			"name": "test",
+			"mode": "y_testing",
+			"port": 8080
+			
+		},
+		{
+			"name": "PoC",
+			"mode": "main",
+			"port": 8080
+			
+		},
+		{
+			"name": "prod",
+			"port": 7777
+		}
+	]
+}
